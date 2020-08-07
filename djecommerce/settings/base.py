@@ -77,6 +77,10 @@ AUTHENTICATION_BACKENDS = (
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = '127.0.0.1'
+EMAIL_PORT = 1025
+
 # CRISPY FORMS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
